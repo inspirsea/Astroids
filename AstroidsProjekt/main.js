@@ -424,7 +424,7 @@ window.Asteroids = (function(){
     width = canvas.width,
     height = canvas.height,
     ct.lineWidth = 1;
-    ct.strokeStyle = 'hsla(0,0%,100%,1)',
+    ct.strokeStyle = '#FFFFFF';
     ship = new Player(10, 20, new Vector(width/2, height/2)),
     shipShoots = new ShootArr(),
     shotcooldown = 0,
@@ -572,12 +572,12 @@ window.Asteroids = (function(){
 
 
 // On ready
-$(function(){
+(function(){
   'use strict';
 
   Asteroids.init('canvas1');
   Asteroids.gameLoop();
 
   console.log('Ready to play.');  
-});
+})();
 
